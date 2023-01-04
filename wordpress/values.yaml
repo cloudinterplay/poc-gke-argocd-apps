@@ -1,0 +1,17 @@
+---
+wordpress:
+  tolerations:
+  - effect: NoSchedule
+    key: kubernetes.io/arch
+    operator: Equal
+    value: arm64
+  service:
+    type: ClusterIP
+  ingress:
+    enabled: true
+    ingressClassName: "nginx-external"
+    hostname: "blog.cloudinterplay.com"
+    annotations:
+      cert-manager.io/cluster-issuer: "letsencrypt-prod"
+      external-dns.alpha.kubernetes.io/hostname: "blog.cloudinterplay.com."
+    tls: true
