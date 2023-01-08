@@ -29,7 +29,7 @@ wordpress:
   mariadb:
     enabled: true
     storage:
-      requestedSize: 2Gb
+      requestedSize: 2G
     settings:
       rootPassword: dummyphrase
     userDatabase:
