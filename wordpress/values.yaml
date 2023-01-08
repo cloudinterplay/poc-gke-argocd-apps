@@ -1,5 +1,7 @@
 ---
 wordpress:
+  nodeSelector:
+    kubernetes.io/arch: arm64
   tolerations:
   - effect: NoSchedule
     key: kubernetes.io/arch
