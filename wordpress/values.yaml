@@ -22,6 +22,10 @@ wordpress:
     enabled: true
     settings:
       rootPassword: dummyphrase
+    userDatabase:
+      name: wordpress
+      user: wordpress
+      password: wordpress
     tolerations:
     - effect: NoSchedule
       key: kubernetes.io/arch
