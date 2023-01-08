@@ -1,5 +1,8 @@
 ---
 wordpress:
+  image:
+    repository: wordpress
+    tag: 6.1.1
   tolerations:
   - effect: NoSchedule
     key: kubernetes.io/arch
