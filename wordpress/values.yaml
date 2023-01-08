@@ -20,6 +20,8 @@ wordpress:
         - blog.cloudinterplay.com
   mariadb:
     enabled: true
+    settings:
+      rootPassword: dummyphrase
     tolerations:
     - effect: NoSchedule
       key: kubernetes.io/arch
