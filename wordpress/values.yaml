@@ -16,6 +16,7 @@ wordpress:
       external-dns.alpha.kubernetes.io/hostname: "blog.cloudinterplay.com."
     tls: true
   mariadb:
+    image: mariadb:10.6.11
     primary:
       tolerations:
       - effect: NoSchedule
