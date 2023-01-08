@@ -28,6 +28,8 @@ wordpress:
         - blog.cloudinterplay.com
   mariadb:
     enabled: true
+    storage:
+      requestedSize: 2Gb
     settings:
       rootPassword: dummyphrase
     userDatabase:
