@@ -1,8 +1,5 @@
 ---
 wordpress:
-  image:
-    repository: wordpress
-    tag: 6.1.1
   tolerations:
   - effect: NoSchedule
     key: kubernetes.io/arch
@@ -19,9 +16,6 @@ wordpress:
       external-dns.alpha.kubernetes.io/hostname: "blog.cloudinterplay.com."
     tls: true
   mariadb:
-    image:
-      repository: mariadb
-      tag: 10.6.11
     primary:
       tolerations:
       - effect: NoSchedule
