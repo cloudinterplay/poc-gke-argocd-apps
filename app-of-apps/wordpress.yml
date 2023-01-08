@@ -18,7 +18,7 @@ spec:
       - values.yaml
     path: wordpress
     repoURL: https://github.com/cloudinterplay/poc-gke-argocd-apps.git
-    targetRevision: dev
+    targetRevision: main
   syncPolicy:
     automated: {}
     syncOptions:
