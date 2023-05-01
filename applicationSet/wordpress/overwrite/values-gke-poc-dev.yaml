@@ -1,0 +1,14 @@
+---
+wordpress:
+  ingress:
+    annotations:
+      external-dns.alpha.kubernetes.io/hostname: "wordpress-dev.cloudinterplay.com."
+    hosts:
+    - host: "wordpress-dev.cloudinterplay.com"
+      paths:
+      - path: /
+        pathType: ImplementationSpecific
+    tls:
+    - secretName: certificate-tls
+      hosts:
+        - wordpress-dev.cloudinterplay.com
